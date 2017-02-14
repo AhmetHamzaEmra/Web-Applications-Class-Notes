@@ -1,0 +1,10 @@
+h1,h2,h3,h4,h5,h6  {color: navy}
+
+
+p  {color: black; line-height: 150%}
+span{font-size: 130%; color: blue; font-family: sans-serif}
+body{
+    font-family: Garamond, Serif;
+    background-image: url(snow.gif);
+    background-repeat: repeat;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function avg(){
+		var i;
+		var ar= new Array();
+		ar[0] = document.getElementById('textbox_id1').value;
+		ar[1] = document.getElementById('textbox_id2').value;
+		ar[2] = document.getElementById('textbox_id3').value;
+		ar[3] = document.getElementById('textbox_id4').value;
+		ar[4] = document.getElementById('textbox_id5').value;
+		var sum = 0;
+		for( var i = 0; i < ar.length; i++ ){
+		    sum += parseInt( ar[i], 10 ); //don't forget to add the base
+		}
+
+		var avg = sum/ar.length;
+
+		document.getElementById('avg').value=document.write( " The average is: " + avg );}
+	</script>
+</head>
+<body>
+<form>
+	<input type="number" name="1" id="textbox_id1"><br />
+	<input type="number" name="1" id="textbox_id2"><br />
+	<input type="number" name="1" id="textbox_id3"><br />
+	<input type="number" name="1" id="textbox_id4"><br />
+	<input type="number" name="1" id="textbox_id5"><br />
+	
+	<input type="submit" onclick="avg()">
+	
+</form>
+</body>
+</html>

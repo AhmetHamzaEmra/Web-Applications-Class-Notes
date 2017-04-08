@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function calcBMI(){
+		var i;
+		
+		var w = document.getElementById('textbox_id1').value;
+		var h = document.getElementById('textbox_id2').value;
+		
+		var result = (w * 703)/(h*h)
+		document.getElementById('avg').value=document.write( " result is : " + result );}
+	</script>
+</head>
+<body>
+<form>
+	<p>weight</p>
+	<input type="number" name="1" id="textbox_id1"><br />
+	<p>height</p>
+	<input type="number" name="1" id="textbox_id2"><br />
+
+	
+	<input type="submit" onclick="calcBMI()">
+	
+</form>
+</body>
+</html>

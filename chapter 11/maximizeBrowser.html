@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naximize New Window</title>
+	<script type="text/javascript">
+		var maxWindow;
+		function createWindow(){
+			var winWidth=300;
+			var winHeight=100;
+			var winLeft=(screen.width-winWidth)/2;
+			var winTop=(screen.width-winHeight)/2;
+			var winOptions=",width="+winWidth;
+			winOptions+=",height="+winHeight;
+			winOptions+=",left="+winLeft;
+			winOptions+=",top="+winTop;
+			maxWindow=window.open("MaxWindow.html","newWindow",winOptions);
+			maxWindow.focus();
+
+		}
+
+
+		
+		function maximizeWindow(){
+
+			maxWindow.moveTo( 50 , 50);
+			maxWindow.resizeTo( 1000 , 640 );
+			maxWindow.focus();
+		}
+
+
+	</script>
+</head>
+<body>
+	<form action="">
+	<p>
+		<input type="button" value="create new Window" onclick="createWindow()" >
+		<input type="button" value="maximize Window" onclick="maximizeWindow();return false" >
+	</p>
+</form>
+
+</body>
+</html>
